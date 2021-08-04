@@ -11,5 +11,8 @@ module.exports = {
   },
   delete: async function levelDeleteQuery(query){
     return Level.deleteOne(query);
+  },
+  findAllSort:async function findAllSort(query,sortType){
+    return Level.find(query).sort(sortType);
   }
 }

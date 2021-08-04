@@ -14,5 +14,8 @@ module.exports = {
   },
   deleteMany:async function mealDealeatManyQuery(query){
     return Meals.deleteMany(query);
+  },
+  findAllSort:async function findAllSort(query,sortType){
+    return Meals.find(query).sort(sortType);
   }
 }

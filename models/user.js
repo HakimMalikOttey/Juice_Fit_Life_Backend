@@ -42,7 +42,12 @@ const userSchema = {
   stretch: [String],
   partition:[String],
   plans:[String],
-  week:[String]
+  week:[String],
+  vimeo:{
+    access_token:String,
+    scope:String,
+    name:String,
+  }
 };
 
 module.exports = User = mongoose.model("users", userSchema);

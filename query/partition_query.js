@@ -11,5 +11,8 @@ module.exports = {
   },
   delete:async function partitionDeleteQuery(query){
     return Partition.deleteOne(query);
+  },
+  findAllSort:async function findAllSort(query,sortType){
+    return Partition.find(query).sort(sortType);
   }
 }

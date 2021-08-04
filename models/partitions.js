@@ -2,12 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const partitionSchema = {
-  type: String,
   name:String,
-  explanation:String,
-  progression:[Schema.Types.Mixed],
+  description:String,
+  progression:[],
   meal:String,
-  date:String
 }
 
 module.exports = Partition = mongoose.model("partitions",partitionSchema);
